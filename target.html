@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link href="//Microsoft.WinJS.0.6/css/ui-light.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="//Microsoft.WinJS.0.6/js/base.js"></script>
+  <script type="text/javascript" src="//Microsoft.WinJS.0.6/js/ui.js"></script>
+  <script src="/html5-qrcode.js"></script>
+  <script src="/qrcode.js"></script>  
+  <script type="text/javascript" src="target.js"></script>
+</head>
+<body id="appBody" style="padding-top: 20px; padding-left: 20px;">
+  <div class="targetContent">
+    <strong>Title: </strong><span id="title">(No title)</span><br />
+    <strong>Description: </strong><span id="description">(No description)</span><br />
+    <strong>Text: </strong><span id="contentValue"></span><br />
+    <br />
+    <progress id="progress" style="min-width: 100%;"></progress>    
+    <div id="imageArea" class="hidden"><strong>QR-Code: </strong><br /><img id="imageHolder" /></div>    
+    <br />
+    <button id="reportCompleted">Close</button>
+  </div>
+</body>
+</html>

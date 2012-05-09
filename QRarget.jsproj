@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{00f5e538-e020-4d5d-a0f5-2035d6fa944a}</ProjectGuid>
+    <PackageCertificateThumbprint>FDFBE5D3BCF350DFBFC533346C3CD53B31EDD908</PackageCertificateThumbprint>
+    <PackageCertificateKeyFile>QRarget_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <ExpressionBlendVersion>5.0.30129.0</ExpressionBlendVersion>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+  </PropertyGroup>
+  <Import Condition="Exists('$(MSBuildExtensionsPath32)\$(MSBuildToolsVersion)\Microsoft.Common.props')" Project="$(MSBuildExtensionsPath32)\$(MSBuildToolsVersion)\Microsoft.Common.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <ItemGroup>
+    <Content Include="default.html" />
+    <Content Include="html5-qrcode.js" />
+    <Content Include="images\logo-small.png" />
+    <Content Include="images\logo-store.png" />
+    <Content Include="images\logo.png" />
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="images\splash.png" />
+    <Content Include="QRarget_TemporaryKey.pfx" />
+    <Content Include="qrcode.js" />
+    <Content Include="target.html" />
+    <Content Include="target.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.WinJS, Version=0.6" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="css\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+</Project>

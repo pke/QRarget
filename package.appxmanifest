@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="pke.qrarget" Version="1.0.0.4" Publisher="CN=phil.kursawe" />
+  <Properties>
+    <DisplayName>QR-Code generator</DisplayName>
+    <Description>Creates QR-Codes (as ShareTarget)</Description>
+    <PublisherDisplayName>Philipp Kursawe</PublisherDisplayName>
+    <Logo>images\logo-store.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="en-us" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="QRarget" Logo="images\logo.png" SmallLogo="images\logo-small.png" Description="QR-Code generator" ForegroundText="dark" BackgroundColor="#FFFFFF">
+        <DefaultTile ShortName="QRarget" ShowName="allLogos" />
+        <SplashScreen BackgroundColor="white" Image="images\splash.png" />
+      </VisualElements>
+      <Extensions>
+        <Extension Category="windows.shareTarget" StartPage="target.html">
+          <ShareTarget>
+            <DataFormat>text</DataFormat>
+            <DataFormat>uri</DataFormat>
+          </ShareTarget>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+</Package>
